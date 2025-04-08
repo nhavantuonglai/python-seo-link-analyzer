@@ -1,5 +1,7 @@
 # Sitemap and link extractor
 
+(Original Vietnamese below)
+
 _Sitemap and Link Extractor (SLE) is a Python tool for extracting URLs from sitemaps or scanning external links from a URL list. It supports XML sitemaps with regex fallback and filters external links based on a specified domain. Results are saved to text files, ideal for SEO and content analysis._
 
 ## Installation Guide

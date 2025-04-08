@@ -1,7 +1,7 @@
 {
 	"name": "scan-extractor",
 	"version": "1.0.1",
-	"description": "Công cụ cập nhật ngày tháng, ảnh bìa trên bài viết markdown thông qua trình tệp lệnh.",
+	"description": "Công cụ trích xuất sitemap và liên kết bên ngoài (SLE) là tiện ích Python dùng để trích xuất URL từ sitemap hoặc quét liên kết bên ngoài từ danh sách URL.",
 	"main": "index.js",
 	"scripts": {
 		"start": "node index.js",
