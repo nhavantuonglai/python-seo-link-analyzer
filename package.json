@@ -1,6 +1,6 @@
 {
 	"name": "sitemap-extractor",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Sitemap and link extractor (SLE) is a Python tool for extracting URLs from sitemaps or scanning external links from a URL list.",
 	"main": "index.js",
 	"scripts": {
