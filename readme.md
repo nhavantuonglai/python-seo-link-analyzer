@@ -9,7 +9,7 @@ _Sitemap and Link Extractor (SLE) is a Python tool for extracting URLs from site
 To install, run the following command in your terminal:
 
 ```
-npm i markdown-sitemap
+npm i sitemap-extractor
 ```
 
 ## Purpose
@@ -30,6 +30,16 @@ npm i markdown-sitemap
 
 – Review results: Check the output files for extracted URLs or links. The tool ensures unique entries and handles errors gracefully, such as invalid sitemaps or inaccessible URLs.
 
+## Contact & support
+
+– Email: info@nhavantuonglai.com.
+
+– Website: nhavantuonglai.com.
+
+If you have any questions or suggestions, don't hesitate to contact us for the quickest support.
+
+Don't forget to star this repository if you find it useful.
+
 # Công cụ trích xuất sitemap và liên kết bên ngoài
 
 _Công cụ trích xuất sitemap và liên kết bên ngoài (SLE) là tiện ích Python dùng để trích xuất URL từ sitemap hoặc quét liên kết bên ngoài từ danh sách URL. Nó hỗ trợ sitemap XML với cơ chế dự phòng regex và lọc liên kết bên ngoài dựa trên domain chỉ định. Kết quả được lưu vào tệp văn bản, phù hợp cho SEO và phân tích nội dung._
@@ -39,7 +49,7 @@ _Công cụ trích xuất sitemap và liên kết bên ngoài (SLE) là tiện �
 Để cài đặt, chạy lệnh sau trong terminal:
 
 ```
-npm i markdown-sitemap
+npm i sitemap-extractor
 ```
 
 ## Công dụng
@@ -59,3 +69,13 @@ npm i markdown-sitemap
 – Xử lý và hoàn tất: Công cụ xử lý dữ liệu đầu vào (sitemap hoặc danh sách URL), trích xuất dữ liệu, và lưu kết quả vào `nhavantuonglai.txt` (URL sitemap) hoặc `nhavantuonglai-output.txt` (liên kết bên ngoài). Hiển thị số lượng mục tìm thấy.
 
 – Xem kết quả: Kiểm tra tệp đầu ra để xem danh sách URL hoặc liên kết. Công cụ đảm bảo các mục không trùng lặp và xử lý lỗi mượt mà, như sitemap không hợp lệ hoặc URL không truy cập được.
+
+## Liên hệ & hỗ trợ
+
+– Email: info@nhavantuonglai.com.
+
+– Website: nhavantuonglai.com.
+
+Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào, đừng ngần ngại liên hệ với chúng tôi để được hỗ trợ nhanh nhất.
+
+Đừng quên star repository này nếu bạn thấy nó hữu ích.

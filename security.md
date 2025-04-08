@@ -11,7 +11,7 @@ The following versions of this project are currently supported with security upd
 | Latest | :white_check_mark: |
 | Older  | :x: |
 
-Only the most recent version of the software, as published on npm (`scan-extractor`), receives security updates and patches. Users are encouraged to always use the latest release to ensure optimal security.
+Only the most recent version of the software, as published on npm (`sitemap-extractor`), receives security updates and patches. Users are encouraged to always use the latest release to ensure optimal security.
 
 ## Reporting a vulnerability
 
@@ -56,7 +56,7 @@ Các phiên bản sau của dự án này hiện được hỗ trợ với các 
 | Mới nhất| :white_check_mark: |
 | Cũ hơn | :x: |
 
-Chỉ phiên bản mới nhất của phần mềm, được xuất bản trên npm (`markdown-adjust` hoặc `markdown-sitemap`), nhận được các bản cập nhật và vá bảo mật. Người dùng được khuyến khích luôn sử dụng bản phát hành mới nhất để đảm bảo bảo mật tối ưu.
+Chỉ phiên bản mới nhất của phần mềm, được xuất bản trên npm (`markdown-adjust` hoặc `sitemap-extractor`), nhận được các bản cập nhật và vá bảo mật. Người dùng được khuyến khích luôn sử dụng bản phát hành mới nhất để đảm bảo bảo mật tối ưu.
 
 ## Báo cáo lỗ hổng bảo mật
 
