@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 def messages(msg_type, *args, return_string=False):
 		messages_dict = {
 				"welcome": "Sitemap and link extractor là công cụ quét liên kết trên sitemaps, kiểm tra và trích xuất liên kết bên ngoài trên website, được phát triển bởi @nhavantuonglai.\nHỗ trợ kỹ thuật: info@nhavantuonglai.com.",
-				"features": "Bước 1: Chọn tính năng\n1. Quét URL từ sitemap.\n2. Quét liên kết bên ngoài từ danh sách URL.\n0. Thoát chương trình.",
+				"features": "Bước 1: Chọn tính năng\n1. Quét URL từ sitemap.\n2. Quét liên kết bên ngoài từ danh sách URL.\n0. Thao tác lại từ đầu.",
 				"feature-prompt": "Vui lòng chọn tính năng: ",
 				"feature-invalid": "Thao tác chọn không hợp lệ.\nVui lòng chọn lại tính năng: ",
 				"sitemap-prompt": "Bước 2: Nhập URL sitemap\n0. Quay lại bước trước.\nURL sitemap là: ",
@@ -23,10 +23,10 @@ def messages(msg_type, *args, return_string=False):
 				"file-invalid": "Tệp {0} không tồn tại hoặc không đọc được.\nVui lòng chọn lại: ",
 				"domain-prompt": "Bước 3: Nhập domain của bạn để lọc liên kết bên ngoài\nMặc định nếu bỏ qua: nhavantuonglai.com.\n0. Quay lại bước trước.\nDomain là: ",
 				"processing": "Đang xử lý…",
-				"processed-url": "Đã xử lý: {0} URL từ {1}.",
+				"processed-url": "Đã xử lý {0} URL từ {1}.",
 				"processed-links": "Đã tìm thấy {0} liên kết bên ngoài từ {1} URL.",
-				"complete-sitemap": "Xử lý sitemap thành công. Đã tìm thấy {0} URL và lưu vào nhavantuonglai.txt.",
-				"complete-links": "Xử lý liên kết bên ngoài thành công. Đã tìm thấy {0} liên kết và lưu vào nhavantuonglai-output.txt.",
+				"complete-sitemap": "Đã tìm thấy {0} liên kết và lưu vào nhavantuonglai.txt.",
+				"complete-links": "Đã tìm thấy {0} liên kết và lưu vào nhavantuonglai-output.txt.",
 				"file-error": "Không thể xử lý {0}: {1}.",
 				"prompt-restart": "Cảm ơn bạn đã sử dụng công cụ.\n1. Truy cập nhavantuonglai.com.\n2. Truy cập Instagram nhavantuonglai.\n0. Thao tác lại từ đầu.\nVui lòng chọn tính năng: ",
 		}
