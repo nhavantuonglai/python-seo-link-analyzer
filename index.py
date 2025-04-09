@@ -13,22 +13,22 @@ from bs4 import BeautifulSoup
 
 def messages(msg_type, *args, return_string=False):
 		messages_dict = {
-				"welcome": "Sitemap and link extractor là công cụ quét liên kết trên sitemaps, kiểm tra và trích xuất liên kết bên ngoài trên website, được phát triển bởi @nhavantuonglai.\nCông cụ hỗ trợ sitemap XML với cơ chế dự phòng regex và lọc liên kết bên ngoài dựa trên domain chỉ định.\nHỗ trợ kỹ thuật: info@nhavantuonglai.com.",
-				"features": "Bước 1: Chọn tính năng:\n1. Quét URL từ sitemap.\n2. Quét liên kết bên ngoài từ danh sách URL.\n0. Thoát chương trình.",
+				"welcome": "Sitemap and link extractor là công cụ quét liên kết trên sitemaps, kiểm tra và trích xuất liên kết bên ngoài trên website, được phát triển bởi @nhavantuonglai.\nHỗ trợ kỹ thuật: info@nhavantuonglai.com.",
+				"features": "Bước 1: Chọn tính năng\n1. Quét URL từ sitemap.\n2. Quét liên kết bên ngoài từ danh sách URL.\n0. Thoát chương trình.",
 				"feature-prompt": "Vui lòng chọn tính năng: ",
 				"feature-invalid": "Thao tác chọn không hợp lệ.\nVui lòng chọn lại tính năng: ",
-				"sitemap-prompt": "Bước 2: Nhập URL sitemap.\n0. Lùi lại 1 bước.\nVui lòng nhập URL: ",
+				"sitemap-prompt": "Bước 2: Nhập URL sitemap\n0. Quay lại bước trước.\nURL sitemap là: ",
 				"sitemap-invalid": "URL sitemap {0} không hợp lệ hoặc không truy cập được.\nVui lòng chọn lại: ",
-				"file-prompt": "Bước 2: Nhập đường dẫn tệp chứa danh sách URL.\nMặc định: nhavantuonglai.txt.\n0. Lùi lại 1 bước.\nVui lòng nhập đường dẫn: ",
+				"file-prompt": "Bước 2: Nhập đường dẫn tệp chứa danh sách URL\nMặc định nếu bỏ qua: nhavantuonglai.txt.\n0. Quay lại bước trước.\nVui lòng nhập đường dẫn: ",
 				"file-invalid": "Tệp {0} không tồn tại hoặc không đọc được.\nVui lòng chọn lại: ",
-				"domain-prompt": "Bước 3: Nhập domain của bạn để lọc liên kết bên ngoài.\nMặc định: nhavantuonglai.com.\n0. Lùi lại 1 bước.\nVui lòng nhập domain: ",
+				"domain-prompt": "Bước 3: Nhập domain của bạn để lọc liên kết bên ngoài\nMặc định nếu bỏ qua: nhavantuonglai.com.\n0. Quay lại bước trước.\nDomain là: ",
 				"processing": "Đang xử lý…",
 				"processed-url": "Đã xử lý: {0} URL từ {1}.",
 				"processed-links": "Đã tìm thấy {0} liên kết bên ngoài từ {1} URL.",
 				"complete-sitemap": "Xử lý sitemap thành công. Đã tìm thấy {0} URL và lưu vào nhavantuonglai.txt.",
 				"complete-links": "Xử lý liên kết bên ngoài thành công. Đã tìm thấy {0} liên kết và lưu vào nhavantuonglai-output.txt.",
 				"file-error": "Không thể xử lý {0}: {1}.",
-				"prompt-restart": "Cảm ơn bạn đã sử dụng công cụ.\n1. Truy cập nhavantuonglai.com\n2. Truy cập Instagram nhavantuonglai.\n0. Thao tác lại từ đầu.\nVui lòng chọn tính năng: ",
+				"prompt-restart": "Cảm ơn bạn đã sử dụng công cụ.\n1. Truy cập nhavantuonglai.com.\n2. Truy cập Instagram nhavantuonglai.\n0. Thao tác lại từ đầu.\nVui lòng chọn tính năng: ",
 		}
 		message = messages_dict.get(msg_type, "").format(*args)
 		if return_string:
