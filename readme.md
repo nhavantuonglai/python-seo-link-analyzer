@@ -9,7 +9,7 @@ _Sitemap and link extractor (SLE) is a Python tool for extracting URLs from site
 To install, run the following command in your terminal:
 
 ```
-npm i sitemap-extractor
+npm install sitemap-extractor
 ```
 
 ## Purpose
@@ -49,7 +49,7 @@ _Công cụ trích xuất sitemap và liên kết bên ngoài (SLE) là tiện �
 Để cài đặt, chạy lệnh sau trong terminal:
 
 ```
-npm i sitemap-extractor
+npm install sitemap-extractor
 ```
 
 ## Công dụng
