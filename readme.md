@@ -1,15 +1,15 @@
-# Sitemap and link extractor
+# SEO Link Analyzer
 
 (Original Vietnamese below)
 
-_Sitemap and link extractor (SLE) is a Python tool for extracting URLs from sitemaps or scanning external links from a URL list. It supports XML sitemaps with regex fallback and filters external links based on a specified domain. Results are saved to text files, ideal for SEO and content analysis._
+_SEO Link Analyzer (SLA) is a Python tool for extracting URLs from sitemaps, scanning external links from a URL list, and detecting 404 errors. It supports XML sitemaps with regex fallback, filters external links based on a specified domain, and identifies broken links. Results are saved to text files, making it ideal for SEO audits and content analysis._
 
 ## Installation Guide
 
 To install, run the following command in your terminal:
 
 ```
-npm install sitemap-extractor
+npm install seo-link-analyzer
 ```
 
 ## Purpose
@@ -18,38 +18,52 @@ npm install sitemap-extractor
 
 – Scans external links from a URL list, filtering by a user-defined domain.
 
+– Detects 404 errors from a URL list to identify broken links.
+
 ## Workflow
 
-– Select feature: Input `1` to extract URLs from a sitemap, `2` to scan external links, or `0` to exit. No default value; users must explicitly choose the desired functionality to proceed.
+– Select feature: Input `1` to extract URLs from a sitemap, `2` to scan external links, `3` to detect 404 errors, or `0` to exit. No default value; users must explicitly choose the desired functionality to proceed.
 
-– Provide input data: For sitemap extraction, enter a sitemap URL ( `https://nhavantuonglai.com/sitemap-0.xml`) with no default; a valid URL is required. For link scanning, input a file path containing URLs or leave blank to use `nhavantuonglai.txt`.
+– Provide input data:
 
-– Specify domain (for link scanning): If scanning links, enter your domain (`nhavantuonglai.com`) to filter external links, or leave blank to use `nhavantuonglai.com`. This step is skipped for sitemap extraction.
+For sitemap extraction, enter a sitemap URL (e.g., `https://nhavantuonglai.com/sitemap-0.xml`). A valid URL is required.
 
-– Process and complete: The tool processes the input (sitemap or URL list), extracts data, and saves results to `nhavantuonglai.txt` (sitemap URLs) or `nhavantuonglai-output.txt` (external links). It displays the count of items found.
+For link scanning or 404 detection, input a file path containing URLs or leave blank to use `nhavantuonglai.txt`.
 
-– Review results: Check the output files for extracted URLs or links. The tool ensures unique entries and handles errors gracefully, such as invalid sitemaps or inaccessible URLs.
+– Specify domain (for link scanning): If scanning external links, enter your domain (e.g., `nhavantuonglai.com`) to filter external links, or leave blank to use `nhavantuonglai.com`. This step is skipped for sitemap extraction and 404 detection.
 
-## Contact & support
+– Process and complete: The tool processes the input (sitemap or URL list), extracts data, and saves results to:
+
+`nhavantuonglai.txt` (sitemap URLs)
+
+`nhavantuonglai-output.txt` (external links)
+
+`nhavantuonglai-404.txt` (broken links)
+
+It displays the count of items found.
+
+– Review results: Check the output files for extracted URLs, external links, or broken links. The tool ensures unique entries and handles errors gracefully, such as invalid sitemaps or inaccessible URLs.
+
+## Contact & Support
 
 – Email: info@nhavantuonglai.com.
 
 – Website: [nhavantuonglai.com](https://nhavantuonglai.com).
 
-If you have any questions or suggestions, don't hesitate to contact us for the quickest support.
+If you have any questions or suggestions, don’t hesitate to contact us for the quickest support.
 
-Don't forget to star this repository if you find it useful.
+Don’t forget to star this repository if you find it useful.
 
-# Công cụ trích xuất sitemap và liên kết bên ngoài
+# Công cụ phân tích liên kết SEO
 
-_Công cụ trích xuất sitemap và liên kết bên ngoài (SLE) là tiện ích Python dùng để trích xuất URL từ sitemap hoặc quét liên kết bên ngoài từ danh sách URL. Nó hỗ trợ sitemap XML với cơ chế dự phòng regex và lọc liên kết bên ngoài dựa trên domain chỉ định. Kết quả được lưu vào tệp văn bản, phù hợp cho SEO và phân tích nội dung._
+_Công cụ phân tích liên kết SEO (SLA) là tiện ích Python dùng để trích xuất URL từ sitemap, quét liên kết bên ngoài từ danh sách URL, và phát hiện lỗi 404. Nó hỗ trợ sitemap XML với cơ chế dự phòng regex, lọc liên kết bên ngoài dựa trên domain chỉ định, và xác định liên kết hỏng. Kết quả được lưu vào tệp văn bản, phù hợp cho kiểm tra SEO và phân tích nội dung._
 
 ## Hướng dẫn cách cài đặt
 
 Để cài đặt, chạy lệnh sau trong terminal:
 
 ```
-npm install sitemap-extractor
+npm install seo-link-analyzer
 ```
 
 ## Công dụng
@@ -58,19 +72,33 @@ npm install sitemap-extractor
 
 – Quét liên kết bên ngoài từ danh sách URL, lọc theo domain do người dùng chỉ định.
 
+– Phát hiện lỗi 404 từ danh sách URL để xác định liên kết hỏng.
+
 ## Flow thao tác
 
-– Chọn tính năng: Nhập `1` để trích xuất URL từ sitemap, `2` để quét liên kết bên ngoài, hoặc `0` để thoát. Không có giá trị mặc định; người dùng phải chọn rõ ràng chức năng mong muốn để tiếp tục.
+– Chọn tính năng: Nhập `1` để trích xuất URL từ sitemap, `2` để quét liên kết bên ngoài, `3` để phát hiện lỗi 404, hoặc `0` để thoát. Không có giá trị mặc định; người dùng phải chọn rõ ràng chức năng mong muốn để tiếp tục.
 
-– Cung cấp dữ liệu đầu vào: Với trích xuất sitemap, nhập URL sitemap (Ví dụ: `https://nhavantuonglai.com/sitemap-0.xml`), không có mặc định; cần URL hợp lệ. Với quét liên kết, nhập đường dẫn tệp chứa URL hoặc để trống để dùng `nhavantuonglai.txt`.
+– Cung cấp dữ liệu đầu vào:
 
-– Chỉ định domain (cho quét liên kết): Nếu quét liên kết, nhập domain của bạn (Ví dụ: `nhavantuonglai.com`) để lọc liên kết bên ngoài, hoặc để trống để dùng `nhavantuonglai.com`. Bước này bỏ qua khi trích xuất sitemap.
+Với trích xuất sitemap, nhập URL sitemap (Ví dụ: `https://nhavantuonglai.com/sitemap-0.xml`). Cần URL hợp lệ.
 
-– Xử lý và hoàn tất: Công cụ xử lý dữ liệu đầu vào (sitemap hoặc danh sách URL), trích xuất dữ liệu, và lưu kết quả vào `nhavantuonglai.txt` (URL sitemap) hoặc `nhavantuonglai-output.txt` (liên kết bên ngoài). Hiển thị số lượng mục tìm thấy.
+Với quét liên kết hoặc phát hiện 404, nhập đường dẫn tệp chứa URL hoặc để trống để dùng `nhavantuonglai.txt`.
 
-– Xem kết quả: Kiểm tra tệp đầu ra để xem danh sách URL hoặc liên kết. Công cụ đảm bảo các mục không trùng lặp và xử lý lỗi mượt mà, như sitemap không hợp lệ hoặc URL không truy cập được.
+– Chỉ định domain (cho quét liên kết): Nếu quét liên kết bên ngoài, nhập domain của bạn (Ví dụ: `nhavantuonglai.com`) để lọc liên kết bên ngoài, hoặc để trống để dùng `nhavantuonglai.com`. Bước này bỏ qua khi trích xuất sitemap và phát hiện 404.
 
-## Liên hệ & hỗ trợ
+– Xử lý và hoàn tất: Công cụ xử lý dữ liệu đầu vào (sitemap hoặc danh sách URL), trích xuất dữ liệu, và lưu kết quả vào:
+
+`nhavantuonglai.txt` (URL sitemap)
+
+`nhavantuonglai-output.txt` (liên kết bên ngoài)
+
+`nhavantuonglai-404.txt` (liên kết hỏng)
+
+Hiển thị số lượng mục tìm thấy.
+
+– Xem kết quả: Kiểm tra tệp đầu ra để xem danh sách URL, liên kết bên ngoài, hoặc liên kết hỏng. Công cụ đảm bảo các mục không trùng lặp và xử lý lỗi mượt mà, như sitemap không hợp lệ hoặc URL không truy cập được.
+
+## Liên hệ & Hỗ trợ
 
 – Email: info@nhavantuonglai.com.
 
